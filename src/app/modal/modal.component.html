@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Image Selector</h2>
+
+<input type="text" placeholder="Image name">
+<br/>
+<br/>
+
+
+<app-select-image></app-select-image>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.imgURL" [disabled]="data.buttonDisabled"  cdkFocusInitial (click)="save()">Save</button>
+</div>

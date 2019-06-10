@@ -1,0 +1,7 @@
+<img [src]="imgURL" height="200" *ngIf="imgURL">
+<br />
+<input #file type="file" accept='image/*' (change)="preview(file.files)" />
+<br />
+<span style="color:red;" [hidden]="messageHidden">{{message}}</span>
+<br />
+<input type="button" [disabled]="buttonDisabled" value="Save">
